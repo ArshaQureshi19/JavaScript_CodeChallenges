@@ -1,4 +1,4 @@
-//Fundamenatal part2
+
 /*Coding Challenge #4 
 Let's improve Steven's tip calculator even more, this time using loops! 
 Your tasks: 
@@ -25,11 +25,11 @@ added together
 4.2. To calculate the average, divide the sum you calculated before by the 
 length of the array (because that's the number of elements) 
 4.3. Call the function with the 'totals' array */
-
+// function creation
 const calcTip =function(bill){
     return bill>50 &&  bill<=300 ? bill* 0.15 : bill*0.2;
 }
-
+//creating Array
 let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
 let tips=[]
 let total=[]
@@ -40,7 +40,7 @@ for(let i=0;i<=bills.length;i++){
 }
 
 console.log(bills,tips,total);
-//Bonus
+//Bonus1
  const calcAverage=function(arr){
     let sum=0;
     for(let i=0; i<= arr.length;i++){
@@ -49,6 +49,7 @@ console.log(bills,tips,total);
     
     return sum / arr.length;
  }
+//function call
  console.log(calcAverage([2,3,7])); 
 console.log (calcAverage(total)); 
 console.log (calcAverage(tips)); 
